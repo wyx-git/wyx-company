@@ -38,13 +38,26 @@
     min-width: 10vh;
     right: 4vh;
     top: 4vh;
+    width: 14vh;
     box-shadow: 0 0.1vh 0.2vh rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     list-style: none;
-    font-size: 2vh;
+    font-size: 1.5vh;
 }
-.drop-menu ul{
+
+.drop-menu ul {
     list-style: none;
+}
+
+.drop-menu ul li{
+    float: right;
+}
+.drop-menu ul li:nth-child(1) ,.drop-menu ul li:nth-child(3) ,.drop-menu ul li:nth-child(5){
+    border-bottom: 0.2vh solid #fff;
+}
+
+.drop-menu ul li:nth-child(2) ,.drop-menu ul li:nth-child(4) ,.drop-menu ul li:nth-child(6){
+    border-bottom: 0.2vh dashed #fff;
 }
 .menu-logo:hover .drop-menu {
     display: block;
@@ -81,7 +94,8 @@
     background: #b3c8d4;
     opacity: 0.5;
 }
-.menu-point{
+
+.menu-point {
     width: 0.6vh;
     height: 0.6vh;
     background: #e8b414;
@@ -90,7 +104,8 @@
     top: 1.5vh;
     left: 6vh;
 }
-.search-drop{
+
+.search-drop {
     display: none;
     padding: 1vh;
     font-size: 1.5vh;
@@ -104,12 +119,23 @@
     background: url("1_03.png") no-repeat center;
     background-size: 100%;
 }
-.search-drop ul{
+
+.search-drop ul {
     list-style: none;
+    display: flex;
+    width: 13vh;
+    height: 11vh;
 }
+
+.search-drop ul input {
+    width: 1.3vh;
+    height: 1.3vh;
+}
+
 .menu-search:hover .search-drop {
     display: block;
 }
+
 .menu-logo {
     width: 3.4vh;
     height: 3.4vh;
@@ -452,79 +478,93 @@
     width: 21vh;
     height: 24vh;
     margin: 0.3vh;
-    background: #ff4;
     box-shadow: 0 0.05vh 0.1vh 0 rgba(0, 0, 0, 0.3);
     border-radius: 0.4vh;
     display: flex;
     flex-wrap: wrap;
 }
-.product-pic{
+
+.product-pic {
     width: 21vh;
     height: 60%;
-    background: #703040;
+    background: url("content-background.jpg") no-repeat center;
+    background-size: 100%;
 }
-.content-product ul{
+
+.content-product ul {
     width: 14vh;
     list-style: none;
     margin-left: 1vh;
 }
-.content-product ul li:nth-child(1){
+
+.content-product ul li:nth-child(1) {
     width: 67%;
     line-height: 2vh;
     font-size: 1.3vh;
 }
-.content-product ul li:nth-child(2){
+
+.content-product ul li:nth-child(2) {
     width: 67%;
     line-height: 2.5vh;
     font-size: 1.5vh;
     color: #606060;
 }
-.content-product ul li:nth-child(3){
+
+.content-product ul li:nth-child(3) {
     width: 14vh;
     font-size: 1.3vh;
     line-height: 2vh;
     color: #8f8f8f;
 }
-.product-video{
+
+.product-video {
     width: 5vh;
     height: 5vh;
     margin-top: 2vh;
-    background: #192314;
+    background: url("menu-search.jpg") no-repeat center;
+    background-size: 100%;
     border-radius: 2.55vh;
 }
-.content:nth-child(2) .content-product{
+
+.content:nth-child(2) .content-product {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     position: relative;
 }
-.content:nth-child(2) .list-pic{
+
+.content:nth-child(2) .list-pic {
     width: 15vh;
     height: 100%;
-    background: #342526;
+    background: url("2_03.png") no-repeat center;
+    background-size: 100%;
 }
-.list-text{
+
+.list-text {
     width: 27.5vh;
     height: 14vh;
 }
-.list-text ul{
+
+.list-text ul {
     list-style: none;
 }
 
-.list-text ul li:nth-child(1){
+.list-text ul li:nth-child(1) {
     margin-top: 1vh;
     width: 25vh;
     line-height: 2.3vh;
     font-size: 1.7vh;
     color: #69c4ea;
 }
-.list-text ul li:nth-child(2){
+
+.list-text ul li:nth-child(2) {
     width: 25vh;
     line-height: 1.5vh;
     font-size: 1vh;
     color: #a1a1a1;
 }
-.list-text ul li:nth-child(3){
+
+.list-text ul li:nth-child(3) {
     width: 25vh;
     line-height: 2.3vh;
     font-size: 1.5vh;
@@ -532,11 +572,149 @@
     padding-bottom: 1vh;
     border-bottom: 0.2vh dotted #000;
 }
-.content:nth-child(2) .list-shop{
+
+.content:nth-child(2) .list-shop {
     position: absolute;
     height: 4vh;
     width: 24vh;
     background: #00f0ff;
     bottom: 2vh;
     right: 2vh;
+}
+
+.content-designer {
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.designer-pic:nth-child(1) {
+    z-index: 50;
+    position: absolute;
+    width: 8.17vh;
+    height: 8.17vh;
+    background: url("2_06.png") no-repeat center;
+    background-size: 100%;
+    left: 1vh;
+    top: 1vh;
+}
+
+.designer-pic:nth-child(2) {
+    z-index: 250;
+    position: absolute;
+    width: 8.17vh;
+    height: 8.17vh;
+    background: url("2_07.png") no-repeat center;
+    background-size: 100%;
+    right: 1vh;
+    top: 6vh;
+}
+
+.designer-pic:nth-child(3) {
+    z-index: 200;
+    position: absolute;
+    width: 2vh;
+    height: 2vh;
+    background: #f7c72d;
+    border-radius: 1vh;
+    left: 4.5vh;
+    top: 11vh;
+    font-size: 1.3vh;
+    text-align: center;
+    line-height: 2vh;
+    color: #fff;
+}
+
+.designer-pic:nth-child(4) {
+    z-index: 150;
+    position: absolute;
+    width: 11vh;
+    height: 11vh;
+    background: url("designer.jpg") no-repeat center;
+    background-size: 100%;
+    border-radius: 5.5vh;
+    left: 4vh;
+    top: 3vh;
+}
+
+.designer-inf {
+    width: 100%;
+    height: 40%;
+    border-bottom: 0.2vh dotted #090809;
+    padding: 1vh 0;
+}
+
+.designer-inf ul {
+    list-style: none;
+    width: 100%;
+}
+
+.designer-inf ul li:nth-child(1) {
+    font-size: 1.3vh;
+    color: #1fb4f5;
+    line-height: 1.5vh;
+}
+
+.designer-inf ul li:nth-child(2) {
+    font-size: 1.5vh;
+    color: #979797;
+    line-height: 2vh;
+}
+
+.designer-service {
+    width: 100%;
+    height: 2vh;
+}
+
+.designer-service ul {
+    display: flex;
+    list-style: none;
+}
+
+.designer-service ul li:nth-child(1) {
+    color: #ef4308;
+    font-size: 1.3vh;
+    line-height: 2vh;
+}
+
+.designer-service ul li:nth-child(2) {
+    color: #1d9ee1;
+    font-size: 1.3vh;
+    line-height: 2vh;
+}
+
+.designer-service ul li:nth-child(3) {
+    color: #7ecb4f;
+    font-size: 1.3vh;
+    line-height: 2vh;
+}
+
+.designer-button {
+    margin: 1.5vh auto;
+    width: 22vh;
+    height: 6vh;
+    background: #2298f3;
+    border-radius: 3vh;
+    border: 0.3vh solid #fff;
+}
+
+.designer-button ul {
+    list-style: none;
+    margin: 0 3vh;
+    display: flex;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 0.2vh 0.2vh #de33ac;
+}
+
+.designer-button ul li:nth-child(1) {
+    font-size: 1.6vh;
+    line-height: 6vh;
+    color: #fff;
+}
+
+.designer-button ul li:nth-child(2) {
+    margin-top: 1vh;
+    font-size: 1.3vh;
+    line-height: 5vh;
 }
