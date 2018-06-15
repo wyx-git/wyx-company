@@ -3,27 +3,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(320 / 750 * 100px);
+    }
 
+}
+
+@media screen and (min-width: 360px) {
+    html {
+        font-size: calc(360 / 750 * 100px);
+    }
+
+}
+
+@media screen and (min-width: 375px) {
+    html {
+        font-size: calc(375 / 750 * 100px);
+    }
+
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: calc(414 / 750 * 100px);
+    }
+
+}
 .header {
     width: 100%;
-    height: 46.5vh;
+    height: 7.74rem;
     background: #f4f4f4;
 }
 
 .menu-list {
     width: 100%;
-    height: 6.7vh;
-    padding: 1.74vh 1.44vh;
+    height: 1.12rem;
+    padding: 0.3rem 0.2rem;
     background: #01486f;
     display: flex;
     flex-wrap: wrap;
 }
 
 .user-logo {
-    width: 3.4vh;
-    height: 3.4vh;
+    width: 0.57rem;
+    height: 0.57rem;
     border: 0.02rem solid #f9cd1e;
-    border-radius: 1.7vh;
+    border-radius: 0.28rem;
     background: url("user-logo.png");
     position: relative;
     display: inline-block;
@@ -35,14 +61,14 @@
     z-index: 300;
     background: #546972;
     opacity: 0.5;
-    min-width: 10vh;
-    right: 4vh;
-    top: 4vh;
-    width: 14vh;
-    box-shadow: 0 0.1vh 0.2vh rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
+    min-width: 1.67rem;
+    right: 0.67rem;
+    top: 0.67rem;
+    width: 2.33rem;
+    box-shadow: 0 0.02rem 0.03rem rgba(0, 0, 0, 0.2);
+    padding: 0.12rem 0.16rem;
     list-style: none;
-    font-size: 1.5vh;
+    font-size: 0.25rem;
 }
 
 .drop-menu ul {
@@ -54,11 +80,11 @@
 }
 
 .drop-menu ul li:nth-child(1), .drop-menu ul li:nth-child(3), .drop-menu ul li:nth-child(5) {
-    border-bottom: 0.2vh solid #fff;
+    border-bottom: 0.03rem solid #fff;
 }
 
 .drop-menu ul li:nth-child(2), .drop-menu ul li:nth-child(4), .drop-menu ul li:nth-child(6) {
-    border-bottom: 0.2vh dashed #fff;
+    border-bottom: 0.03rem dashed #fff;
 }
 
 .menu-logo:hover .drop-menu {
@@ -66,8 +92,8 @@
 }
 
 .menu-search {
-    width: 35.37vh;
-    height: 3.4vh;
+    width: 5.9rem;
+    height: 0.56rem;
     position: relative;
 }
 
@@ -75,47 +101,47 @@
     position: absolute;
     left: 34rem;
     top: 0.9rem;
-    width: 3.9vh;
-    height: 1.9vh;
+    width: 0.65rem;
+    height: 0.32rem;
     background: url("menu-search.png") no-repeat center;
     background-size: 100%;
-    border-radius: 0.9vh;
-    line-height: 1.9vh;
-    font-size: 24px;
+    border-radius: 0.16rem;
+    line-height: 0.32rem;
+    font-size: 0.24rem;
     color: #fff;
     text-align: center;
 }
 
 .menu-search input {
     display: block;
-    margin: 0.2vh auto;
-    width: 25.59vh;
-    height: 3vh;
-    border: 3px solid #b3c8d4;
-    border-radius: 1.5vh;
+    margin: 0.03rem auto;
+    width: 4.26rem;
+    height: 0.5rem;
+    border: 0.03rem solid #b3c8d4;
+    border-radius: 0.25rem;
     background: #b3c8d4;
     opacity: 0.5;
 }
 
 .menu-point {
-    width: 0.6vh;
-    height: 0.6vh;
+    width: 0.1rem;
+    height: 0.1rem;
     background: #e8b414;
-    border-radius: 0.3vh;
+    border-radius: 0.05rem;
     position: absolute;
-    top: 1.5vh;
-    left: 6vh;
+    top: 0.25rem;
+    left: 1rem;
 }
 
 .search-drop {
     display: none;
-    padding: 1vh;
-    font-size: 1.5vh;
+    padding: 0.17rem;
+    font-size: 0.25rem;
     position: absolute;
-    left: 10vh;
+    left: 1.67rem;
     z-index: 300;
-    width: 15.8vh;
-    height: 11.3vh;
+    width: 2.63rem;
+    height: 1.88rem;
     text-align: center;
     color: #000;
     background: url("1_03.png") no-repeat center;
@@ -125,13 +151,13 @@
 .search-drop ul {
     list-style: none;
     display: flex;
-    width: 13vh;
-    height: 11vh;
+    width: 2.17rem;
+    height: 1.83rem;
 }
 
 .search-drop ul input {
-    width: 1.3vh;
-    height: 1.3vh;
+    width: 0.22rem;
+    height: 0.22rem;
 }
 
 .menu-search:hover .search-drop {
@@ -139,15 +165,15 @@
 }
 
 .menu-logo {
-    width: 3.4vh;
-    height: 3.4vh;
+    width: 0.57rem;
+    height: 0.57rem;
     background: url("menu-logo.png") no-repeat center;
     background-size: 100%;
 }
 
 .header-inf {
     width: 100%;
-    height: 39.8vh;
+    height: 6.63rem;
     position: relative;
     overflow: hidden;
 }
@@ -156,7 +182,7 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: 19.76vh;
+    height: 3.29rem;
     background: #1faadd;
 }
 
@@ -164,7 +190,7 @@
     position: absolute;
     z-index: 50;
     width: 100%;
-    height: 19.76vh;
+    height: 3.29rem;
     background: url("header-background.png") no-repeat center;
     opacity: 0.4;
     background-size: 100%;
@@ -173,10 +199,10 @@
 .header-product:nth-child(3) {
     position: absolute;
     z-index: 100;
-    top: 4.26vh;
-    left: 5.30vh;
+    top: 0.71rem;
+    left: 0.88rem;
     width: 78.5%;
-    height: 18.32vh;
+    height: 3.05rem;
     background: url("header-background.png") no-repeat center;
     background-size: 100%;
 }
@@ -184,10 +210,10 @@
 .header-product:nth-child(4) {
     position: absolute;
     z-index: 100;
-    width: 1.74vh;
-    height: 1.74vh;
-    left: 1.16vh;
-    top: 12vh;
+    width: 0.29rem;
+    height: 0.29rem;
+    left: 0.19rem;
+    top: 2rem;
     opacity: 0.5;
     background: #f6e39c;
 }
@@ -195,10 +221,10 @@
 .header-product:nth-child(5) {
     position: absolute;
     z-index: 100;
-    width: 3.1vh;
-    height: 3.49vh;
-    left: 2.03vh;
-    top: 12.87vh;
+    width: 0.52rem;
+    height: 0.58rem;
+    left: 0.34rem;
+    top: 2.14rem;
     opacity: 0.5;
     background: #f6e39c;
 }
@@ -206,10 +232,10 @@
 .header-product:nth-child(6) {
     position: absolute;
     z-index: 150;
-    width: 10.1vh;
-    height: 11.83vh;
-    right: 2.4vh;
-    top: 8.7vh;
+    width: 1.68rem;
+    height: 2rem;
+    right: 0.4rem;
+    top: 1.45rem;
     opacity: 0.5;
     background: #b6f1d2;
 }
@@ -217,10 +243,10 @@
 .header-product:nth-child(7) {
     position: absolute;
     z-index: 200;
-    width: 24.26vh;
-    height: 7.12vh;
-    top: 10.2vh;
-    left: 4vh;
+    width: 4.04rem;
+    height: 1.19rem;
+    top: 1.7rem;
+    left: 0.67rem;
     background: #10c8f0;
 }
 
@@ -229,83 +255,85 @@
 }
 
 .header-product ul li:nth-child(1) {
-    margin: 0.5vh 0.5vh 0 0.5vh;
-    width: 11.42vh;
-    height: 2vh;
-    line-height: 1.9vh;
-    font-size: 1.5vh;
+    margin: 0.08rem 0.08rem 0 0.08rem;
+    width: 1.9rem;
+    height: 0.33rem;
+    line-height: 0.32rem;
+    font-size: 0.25rem;
     color: #fff;
     font-weight: bold;
     text-decoration: underline;
 }
 
 .header-product ul li:nth-child(2) {
-    margin: 0 0.5vh;
-    width: 11.42vh;
-    height: 2vh;
-    line-height: 1.9vh;
-    font-size: 1.5vh;
+    margin: 0 0.08rem;
+    width: 1.9rem;
+    height: 0.33rem;
+    line-height: 0.32rem;
+    font-size: 0.25rem;
     color: #fff;
     font-weight: bold;
 }
 
 .header-product ul li:nth-child(3) {
-    margin: 0 0.5vh;
-    width: 22vh;
-    height: 3vh;
-    line-height: 1.2vh;
-    font-size: 1vh;
+    margin: 0 0.08rem;
+    width: 3.66rem;
+    height: 0.5rem;
+    line-height: 0.2rem;
+    font-size: 0.16rem;
     color: #fff;
 }
 
 .header-product:nth-child(8) {
     position: absolute;
     z-index: 200;
-    padding: 1vh 1.2vh;
-    width: 33.27vh;
-    height: 14.05vh;
-    top: 18.32vh;
-    left: 6.8vh;
+    padding: 0.05rem 0.05rem;
+    width: 5.54rem;
+    height: 2.34rem;
+    top: 3.05rem;
+    left: 1.05rem;
     display: flex;
     background: #ffffff;
-    border-bottom: 0.2vh solid #10c8f0;
-    border-radius: 0.3vh;
-    box-shadow: 0.5vh 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    border-bottom: 0.03rem solid #10c8f0;
+    border-radius: 0.05rem;
+    box-shadow: 0.08rem 0.08rem 0.08rem 0.08rem rgba(0, 0, 0, 0.3);
 }
 
 .product-content-1 {
-    width: 14.3vh;
+    width: 2.38rem;
     height: 100%;
-    font-size: 1.6vh;
-    letter-spacing: 0.4vh;
+    font-size: 0.27rem;
+    letter-spacing: 0.06rem;
 }
 
 .product-time {
-    width: 7.51vh;
-    height: 2.16vh;
+    width: 1.25rem;
+    height: 0.36rem;
+    margin: 0.1rem 0 0 0.1rem;
     background: #07b0d5;
     border: 0.02rem solid #5be0fd;
-    border-radius: 1.08vh;
+    border-radius: 0.18rem;
     color: #fff;
-    font-size: 0.8vh;
-    letter-spacing: 0.2vh;
-    line-height: 2.4vh;
+    font-size: 0.12rem;
+    letter-spacing: 0.03rem;
+    line-height: 0.36rem;
     text-align: center;
 }
 
 .product-content-2 {
-    width: 17.54vh;
+    margin-top: 0.1rem;
+    width: 0.4rem;
     height: 100%;
-    border-left: 0.2vh dotted #000;
+    border-left: 0.03rem dotted #000;
 }
 
 .summary {
-    width: 17.54vh;
-    height: 4vh;
+    width: 1.26rem;
+    height: 0.67rem;
     display: flex;
     justify-content: right;
-    font-size: 2.4vh;
-    line-height: 4vh;
+    font-size: 0.4rem;
+    line-height: 0.67rem;
 }
 
 .summary:nth-child(1) {
@@ -327,10 +355,10 @@
 }
 
 .summary ul {
-    width: 15vh;
-    height: 4vh;
-    margin-left: 2vh;
-    border-left: 0.2vh dotted #000;
+    width: 2.5rem;
+    height: 0.67rem;
+    margin-left: 0.1rem;
+    border-left: 0.02rem dotted #000;
     display: block;
 }
 
@@ -338,11 +366,11 @@
     float: left;
     margin: 0;
     color: #595959;
-    width: 10vh;
+    width: 1.9rem;
     height: 50%;
     list-style: none;
     font-style: normal;
-    font-size: 1.44vh;
+    font-size: 0.12rem;
     text-decoration: none;
 }
 
@@ -350,35 +378,35 @@
     float: left;
     margin: 0;
     color: #595959;
-    width: 6vh;
+    width: 1.4rem;
     list-style: none;
     font-style: normal;
-    font-size: 1vh;
+    font-size: 0.12rem;
 }
 
 .summary ul li:nth-child(3) {
-    width: 3vh;
+    width: 0.5rem;
     float: left;
-    line-height: 2vh;
+    line-height: 0.33rem;
     margin: 0;
 }
 
 .header-product:nth-child(9) {
     position: absolute;
     z-index: 100;
-    width: 2.88vh;
-    height: 5.7vh;
-    top: 13vh;
-    right: 1.6vh;
+    width: 0.48rem;
+    height: 1.17rem;
+    top: 2.17rem;
+    right: 0.26rem;
     background: url("3_03.png") no-repeat center;
     background-size: 100%;
-    font-size: 1.2vh;
+    font-size: 0.12rem;
     color: #f5f5f5;
 }
 
 .header-banner-button {
-    width: 2.88vh;
-    height: 4vh;
+    width: 0.48rem;
+    height: 0.67rem;
     background: url("header-banner-button.png") no-repeat center;
     background-size: 200%;
 }
@@ -391,27 +419,28 @@
 
 .content:nth-child(1) {
     width: 100%;
-    height: 65.6vh;
+    height: 12rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 .content:nth-child(2) {
+    margin-top: 0.1rem;
     width: 100%;
-    height: 54.3vh;
+    height: 9.04rem;
 }
 
 .content:nth-child(3) {
     width: 100%;
-    height: 72.37vh;
+    height: 12.05rem;
     display: flex;
     flex-wrap: wrap;
-    border-bottom: 0.2vh dotted #000;
+    border-bottom: 0.03rem dotted #000;
 }
 
 .content-title {
     width: 100%;
-    height: 2.4vh;
+    height: 0.4rem;
 }
 
 .content-title ul {
@@ -420,69 +449,70 @@
 }
 
 .content-title li:nth-child(1) {
-    width: 2.5vh;
-    border-top: 0.2vh solid #ebc243;
+    width: 0.5rem;
+    border-top: 0.03rem solid #ebc243;
     text-align: center;
-    line-height: 2.3vh;
-    font-size: 1vh;
+    line-height: 0.38rem;
+    font-size: 0.17rem;
     color: #727272;
 }
 
 .content-title li:nth-child(2) {
     text-align: center;
-    font-size: 1.5vh;
+    font-size: 0.25rem;
+    line-height: 0.45rem;
     font-weight: bold;
 }
 
 .content-title li:nth-child(3) {
     text-align: center;
-    line-height: 2.5vh;
-    font-size: 1vh;
+    line-height: 0.38rem;
+    font-size: 0.17rem;
     color: #727272;
 }
 
 .content-menu {
-    width: 35.5vh;
-    height: 3vh;
+    width: 5.91rem;
+    height: 0.5rem;
     display: flex;
     justify-content: space-between;
 }
 
 .content-submenu {
-    width: 10.51vh;
-    margin-top: 0.3vh;
-    border: 0.2vh solid #fff;
-    border-radius: 1.5vh;
+    width: 1.75rem;
+    margin-top: 0.05rem;
+    border: 0.03rem solid #fff;
+    border-radius: 0.25rem;
     display: inline-block;
     color: #fff;
-    line-height: 2.4vh;
-    font-size: 1.3vh;
+    line-height: 0.4rem;
+    font-size: 0.22rem;
     text-align: center;
     position: relative;
 }
 
 .content-submenu:nth-child(1) {
     background: #e8b414;
-    box-shadow: 0.2vh 0.2vh #e8b414;
+    box-shadow: 0.02rem 0.02rem 0.02rem 0.02rem #e8b414;
 }
 
 .content-submenu:nth-child(2) {
     background: #40d1f1;
-    box-shadow: 0.2vh 0.2vh #40d1f1;
+    box-shadow: 0.02rem 0.02rem 0.02rem 0.02rem #40d1f1;
 }
 
 .content-submenu:nth-child(3) {
     background: #32d486;
-    box-shadow: 0.2vh 0.2vh #32d486;
+    box-shadow: 0.02rem 0.02rem 0.02rem 0.02rem #32d486;
 }
 
 .guild-menu {
     display: none;
-    padding: 1vh;
-    font-size: 1.5vh;
+    padding: 0.17rem;
+    font-size: 0.25rem;
     position: absolute;
-    width: 15.8vh;
-    height: 11.3vh;
+    width: 2.63rem;
+    height: 1.88rem;
     color: #000;
     background: url("1_03.png") no-repeat center;
     background-size: 100%;
@@ -490,7 +520,7 @@
 
 .guild-menu ul {
     list-style: none;
-    line-height: 3vh;
+    line-height: 0.5rem;
 }
 
 .content-submenu:hover .guild-menu {
@@ -498,55 +528,55 @@
 }
 
 .content-product {
-    width: 21vh;
-    height: 24vh;
-    margin: 0.3vh;
-    box-shadow: 0 0.05vh 0.1vh 0 rgba(0, 0, 0, 0.3);
-    border-radius: 0.4vh;
+    width: 3.42rem;
+    height: 4rem;
+    margin: 0.05rem;
+    box-shadow: 0 0.01rem 0.01rem 0.01rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.02rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 .product-pic {
-    width: 21vh;
+    width: 3.4rem;
     height: 60%;
     background: url("content-background.jpg") no-repeat center;
     background-size: 100%;
 }
 
 .content-product ul {
-    width: 14vh;
+    width: 2.15rem;
     list-style: none;
-    margin-left: 1vh;
+    margin-left: 0.17rem;
 }
 
 .content-product ul li:nth-child(1) {
     width: 67%;
-    line-height: 2vh;
-    font-size: 1.3vh;
+    line-height: 0.33rem;
+    font-size: 0.16rem;
 }
 
 .content-product ul li:nth-child(2) {
-    width: 67%;
-    line-height: 2.5vh;
-    font-size: 1.5vh;
+    width: 100%;
+    line-height: 0.4rem;
+    font-size: 0.25rem;
     color: #606060;
 }
 
 .content-product ul li:nth-child(3) {
-    width: 14vh;
-    font-size: 1.3vh;
-    line-height: 2vh;
+    width: 100%;
+    font-size: 0.16rem;
+    line-height: 0.33rem;
     color: #8f8f8f;
 }
 
 .product-video {
-    width: 5vh;
-    height: 5vh;
-    margin-top: 2vh;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.1rem;
     background: url("menu-search.jpg") no-repeat center;
     background-size: 100%;
-    border-radius: 2.55vh;
+    border-radius: 0.25rem;
 }
 
 .content:nth-child(2) .content-product {
@@ -557,15 +587,15 @@
 }
 
 .content:nth-child(2) .list-pic {
-    width: 15vh;
+    width: 2.5rem;
     height: 100%;
     background: url("2_03.png") no-repeat center;
     background-size: 100%;
 }
 
 .list-text {
-    width: 27.5vh;
-    height: 14vh;
+    width: 4.55rem;
+    height: 2.53rem;
 }
 
 .list-text ul {
@@ -573,36 +603,37 @@
 }
 
 .list-text ul li:nth-child(1) {
-    margin-top: 1vh;
-    width: 25vh;
-    line-height: 2.3vh;
-    font-size: 1.7vh;
+    margin-top: 0.17rem;
+    width: 4.5rem;
+    line-height: 0.4rem;
+    font-size: 0.32rem;
     color: #69c4ea;
 }
 
 .list-text ul li:nth-child(2) {
-    width: 25vh;
-    line-height: 1.5vh;
-    font-size: 1vh;
+    width: 4.3rem;
+    line-height: 0.25rem;
+    font-size: 0.17rem;
     color: #a1a1a1;
 }
 
 .list-text ul li:nth-child(3) {
-    width: 25vh;
-    line-height: 2.3vh;
-    font-size: 1.5vh;
+    width: 4.1rem;
+    line-height: 0.32rem;
+    font-size: 0.25rem;
     color: #434343;
-    padding-bottom: 1vh;
+    padding-bottom: 0.17rem;
     border-bottom: 0.2vh dotted #000;
 }
 
 .content:nth-child(2) .list-shop {
     position: absolute;
-    height: 4vh;
-    width: 24vh;
-    background: #00f0ff;
-    bottom: 2vh;
-    right: 2vh;
+    height: 0.6rem;
+    width: 4.1rem;
+    background: url("list-shop.png") no-repeat center;
+    background-size: 100%;
+    bottom: 0.33rem;
+    right: 0.33rem;
 }
 
 .content-designer {
@@ -614,57 +645,57 @@
 .designer-pic:nth-child(1) {
     z-index: 50;
     position: absolute;
-    width: 8.17vh;
-    height: 8.17vh;
+    width: 1.36rem;
+    height: 1.36rem;
     background: url("2_06.png") no-repeat center;
     background-size: 100%;
-    left: 1vh;
-    top: 1vh;
+    left: 0.17rem;
+    top: 0.17rem;
 }
 
 .designer-pic:nth-child(2) {
     z-index: 250;
     position: absolute;
-    width: 8.17vh;
-    height: 8.17vh;
+    width: 1.36rem;
+    height: 1.36rem;
     background: url("2_07.png") no-repeat center;
     background-size: 100%;
-    right: 1vh;
-    top: 6vh;
+    right: 0.17rem;
+    top: 1rem;
 }
 
 .designer-pic:nth-child(3) {
     z-index: 200;
     position: absolute;
-    width: 2vh;
-    height: 2vh;
+    width: 0.34rem;
+    height: 0.34rem;
     background: #f7c72d;
-    border-radius: 1vh;
-    left: 4.5vh;
-    top: 11vh;
-    font-size: 1.3vh;
+    border-radius: 0.17rem;
+    left: 0.65rem;
+    top: 1.65rem;
+    font-size: 0.24rem;
     text-align: center;
-    line-height: 2vh;
+    line-height: 0.33rem;
     color: #fff;
 }
 
 .designer-pic:nth-child(4) {
     z-index: 150;
     position: absolute;
-    width: 11vh;
-    height: 11vh;
+    width: 1.66rem;
+    height: 1.66rem;
     background: url("designer.jpg") no-repeat center;
     background-size: 100%;
-    border-radius: 5.5vh;
-    left: 4vh;
-    top: 3vh;
+    border-radius: 0.83rem;
+    left: 0.67rem;
+    top: 0.5rem;
 }
 
 .designer-inf {
     width: 100%;
     height: 40%;
-    border-bottom: 0.2vh dotted #090809;
-    padding: 1vh 0;
+    border-bottom: 0.02rem dotted #090809;
+    padding: 0.17rem 0;
 }
 
 .designer-inf ul {
@@ -673,20 +704,22 @@
 }
 
 .designer-inf ul li:nth-child(1) {
-    font-size: 1.3vh;
+    width: 100%;
+    font-size: 0.24rem;
     color: #1fb4f5;
-    line-height: 1.5vh;
+    line-height: 0.25rem;
 }
 
 .designer-inf ul li:nth-child(2) {
-    font-size: 1.5vh;
+    width: 100%;
+    font-size: 0.26rem;
     color: #979797;
-    line-height: 2vh;
+    line-height: 0.33rem;
 }
 
 .designer-service {
     width: 100%;
-    height: 2vh;
+    height: 0.33rem;
 }
 
 .designer-service ul {
@@ -696,72 +729,73 @@
 
 .designer-service ul li:nth-child(1) {
     color: #ef4308;
-    font-size: 1.3vh;
-    line-height: 2vh;
+    font-size: 0.24rem;
+    line-height: 0.33rem;
 }
 
 .designer-service ul li:nth-child(2) {
     color: #1d9ee1;
-    font-size: 1.3vh;
-    line-height: 2vh;
+    font-size: 0.24rem;
+    line-height: 0.33rem;
 }
 
 .designer-service ul li:nth-child(3) {
     color: #7ecb4f;
-    font-size: 1.3vh;
-    line-height: 2vh;
+    font-size: 0.24rem;
+    line-height: 0.33rem;
 }
 
 .designer-button {
-    margin: 1.5vh auto;
-    width: 22vh;
-    height: 6vh;
+    margin: 0.25rem auto;
+    width: 3.66rem;
+    height: 1rem;
     background: #2298f3;
-    border-radius: 3vh;
-    border: 0.3vh solid #fff;
+    border-radius: 0.5rem;
+    border: 0.05rem solid #fff;
 }
 
 .designer-button ul {
     list-style: none;
-    margin: 0 3vh;
+    margin: 0 0.5rem;
     display: flex;
     font-style: italic;
     font-weight: bold;
-    text-shadow: 0.2vh 0.2vh #de33ac;
+    text-shadow: 0.03rem 0.03rem #de33ac;
 }
 
 .designer-button ul li:nth-child(1) {
-    font-size: 1.6vh;
-    line-height: 6vh;
+    font-size: 0.25rem;
+    line-height: 1rem;
     color: #fff;
 }
 
 .designer-button ul li:nth-child(2) {
-    margin-top: 1vh;
-    font-size: 1.3vh;
-    line-height: 5vh;
+    margin-top: 0.14rem;
+    font-size: 0.2rem;
+    line-height: 0.8rem;
 }
 
 .hot-list {
     width: 100%;
-    height: 92vh;
+    margin-top: 0.1rem;
+    height: 15.32rem;
     position: relative;
 }
 
 .banner-logo {
     position: absolute;
-    right: 1vh;
-    top: 0.5vh;
-    width: 2vh;
-    height: 0.5vh;
+    right: 0.17rem;
+    top: 0.08rem;
+    width: 0.33rem;
+    height: 0.08rem;
     background: url("banner-logo.png") no-repeat center;
     background-size: 100%;
 }
 
 .hot-banner {
-    margin-top: 0.5vh;
+    margin-top: 0.08rem;
     width: 100%;
-    height: 42vh;
+    height: 7rem;
     background: url("banner.png") no-repeat center;
     background-size: 100%;
     position: relative;
@@ -772,14 +806,14 @@
     position: absolute;
     z-index: 1000;
     width: 100%;
-    height: 10vh;
+    height: 1.67rem;
     bottom: 0;
     background: rgba(28, 47, 20, 0.5);
     display: flex;
 }
 
 .banner-text {
-    margin: 1vh 0 1vh 1vh;
+    margin: 0.17rem 0 0.17rem 0.17rem;
     width: 75%;
     height: 100%;
 }
@@ -790,38 +824,38 @@
 }
 
 .banner-text ul li:nth-child(1) {
-    font-size: 1.5vh;
+    font-size: 0.24rem;
     font-weight: bold;
     color: #fff;
 }
 
 .banner-text .line:nth-child(2) {
-    margin: 0.5vh;
-    width: 2.5vh;
-    height: 0.2vh;
+    margin: 0.08rem;
+    width: 0.4rem;
+    height: 0.03rem;
     background: #c0c0c0;
 }
 
 .banner-text ul li:nth-child(3) {
-    font-size: 1.3vh;
+    font-size: 0.22rem;
     color: #d9d9d9;
 }
 
 .banner-button {
     width: 20%;
     height: 100%;
-    padding: 0.5vh;
+    padding: 0.08rem;
 }
 
 .banner-button .banner-time {
     height: 30%;
     width: 100%;
-    font-size: 1.7vh;
-    line-height: 2vh;
+    font-size: 0.27rem;
+    line-height: 0.33rem;
     font-weight: 400;
     text-align: center;
     color: #ffc822;
-    border-bottom: 0.2vh dotted #c0c0c0;
+    border-bottom: 0.03rem dotted #c0c0c0;
 }
 
 .banner-button-list {
@@ -832,220 +866,276 @@
 
 .banner-button-list .button-1 {
     position: absolute;
-    top: 1vh;
-    left: 1.5vh;
-    width: 4.5vh;
-    height: 1.6vh;
-    border-radius: 0.8vh;
+    top: 0.17rem;
+    left: 0.24rem;
+    width: 0.75rem;
+    height: 0.25rem;
+    border-radius: 0.12rem;
     background: #ff2673;
-    border: 0.2vh solid #fff;
-    box-shadow: 0 0 0.2vh 0.2vh #ff2673;
-    font-size: 1.2vh;
+    border: 0.03rem solid #fff;
+    box-shadow: 0 0 0.03rem 0.03rem #ff2673;
+    font-size: 0.2rem;
     text-align: center;
-    line-height: 1.3vh;
+    line-height: 0.2rem;
     color: #fff;
 }
 
 .hot-news {
     width: 100%;
-    height: 42vh;
+    height: 7rem;
 }
 
 .hot-news .hot:nth-child(1) {
     float: left;
     width: 50%;
-    height: 21vh;
+    height: 3.5rem;
     background: url("content-background.jpg");
 }
 
 .hot-news .hot:nth-child(2) {
     float: right;
     width: 50%;
-    height: 21vh;
+    height: 3.5rem;
     background: #fcfbfb;
 }
 
 .hot-news .hot:nth-child(3) {
     float: left;
     width: 50%;
-    height: 21vh;
+    height: 3.5rem;
     background: #364854;
 }
 
 .hot-news .hot:nth-child(4) {
     float: right;
     width: 50%;
-    height: 21vh;
+    height: 3.5rem;
     background: url("content-background.jpg");
 }
 
 .hot ul {
-    padding: 1vh;
+    padding: 0.17rem;
     list-style: none;
-    width: 21vh;
+    width: 3.5rem;
 }
 
 .hot ul li:nth-child(1) {
-    width: 15vh;
-    font-size: 1.7vh;
+    width: 2.5rem;
+    font-size: 0.28rem;
     color: #777777;
-    line-height: 3vh;
+    line-height: 0.5rem;
     font-weight: bold;
 }
 
 .hot ul li:nth-child(2) {
-    width: 19vh;
-    font-size: 1.5vh;
-    line-height: 2vh;
+    width: 3.1rem;
+    font-size: 0.24rem;
+    line-height: 0.32rem;
     color: #bdbdbd;
 }
 
 .hot ul li:nth-child(3) {
-    font-size: 1.8vh;
-    margin-top: 4vh;
+    font-size: 0.3rem;
+    margin-top: 0.7rem;
     color: #38acf5;
     font-weight: 400;
 }
 
 .partner-list {
     width: 100%;
-    height: 41vh;
+    height: 7rem;
 }
 
 .partner-menu {
-    margin-bottom: 3vh;
+    margin-bottom: 0.5rem;
 }
 
 .partner {
     width: 100%;
-    height: 8.5vh;
+    height: 1.42rem;
     display: flex;
     justify-content: space-between;
 }
 
 .partner .partner-sub {
-    width: 7.2vh;
-    height: 7.2vh;
-    background: #703040;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.16rem;
+    text-align: center;
 }
-
+.partner-1{
+    width: 100%;
+    height: 60%;
+    background: url("partner-1.png") no-repeat center;
+    background-size: 60%;
+}
+.partner-2{
+    width: 100%;
+    height: 60%;
+    background: url("partner-2.png") no-repeat center;
+    background-size: 60%;
+}
+.partner-3{
+    width: 100%;
+    height: 60%;
+    background: url("partner-3.png") no-repeat center;
+    background-size: 60%;
+}
+.partner-4{
+    width: 100%;
+    height: 60%;
+    background: url("partner-4.png") no-repeat center;
+    background-size: 60%;
+}
+.partner-5{
+    width: 100%;
+    height: 60%;
+    background: url("partner-5.png") no-repeat center;
+    background-size: 60%;
+}
+.partner-6{
+    width: 100%;
+    height: 60%;
+    background: url("partner-6.png") no-repeat center;
+    background-size: 60%;
+}
+.partner-7{
+    width: 100%;
+    height: 60%;
+    background: url("partner-7.png") no-repeat center;
+    background-size: 60%;
+}
+.partner-8{
+    width: 100%;
+    height: 60%;
+    background: url("partner-8.png") no-repeat center;
+    background-size: 60%;
+}
+.partner-9{
+    width: 100%;
+    height: 60%;
+    background: url("partner-9.png") no-repeat center;
+    background-size: 60%;
+}
 .partner-button {
-    margin: 1.5vh auto;
-    width: 22vh;
-    height: 6vh;
+    margin: 0.24rem auto;
+    width: 3.66rem;
+    height: 1rem;
     background: #48b01f;
-    border-radius: 3vh;
-    border: 0.3vh solid #fff;
-    box-shadow: 0 0 0.2vh 0.2ch rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    border: 0.05rem solid #fff;
+    box-shadow: 0 0 0.03rem 0.03rem rgba(0, 0, 0, 0.4);
 }
 
 .partner-button ul {
     list-style: none;
-    margin: 0 2vh;
+    margin: 0 0.33rem;
     display: flex;
     font-style: italic;
     font-weight: bold;
-    text-shadow: 0.2vh 0.2vh #ada200;
+    text-shadow: 0.03rem 0.03rem #ada200;
 }
 
 .partner-button ul li:nth-child(1) {
-    font-size: 1.6vh;
-    width: 9vh;
+    font-size: 0.24rem;
+    width: 1.5rem;
     line-height: 6vh;
     color: #fff;
 }
 
 .partner-button ul li:nth-child(2) {
-    margin-top: 1.2vh;
-    font-size: 1.3vh;
+    margin-top: 0.2rem;
+    font-size: 0.16rem;
     color: #fff;
-    line-height: 1.4vh;
+    line-height: 0.18rem;
 }
 
 .footer-list {
     width: 100%;
-    height: 29.5vh;
+    height: 4.9rem;
     background: #2d2d2d;
-    padding: 3vh 0 2vh;
+    padding: 0.5rem 0 0.33rem;
 }
 
 .footer:nth-child(1) {
     margin: 0 auto;
-    width: 25vh;
-    height: 7vh;
+    width: 4rem;
+    height: 1.16rem;
     display: flex;
 }
 
 .logo-left {
-    width: 12.4vh;
-    height: 7vh;
+    width: 2rem;
+    height: 1.16rem;
     background: url("logoleft.png") no-repeat center;
-    border-right: 0.2vh dotted #f5f5f5;
+    background-size: 80%;
+    border-right: 0.03rem dotted #f5f5f5;
 }
 
 .logo-right {
-    width: 12.4vh;
-    height: 7vh;
+    width: 2rem;
+    height: 1.16rem;
     background: url("logoright.png") no-repeat center;
+    background-size: 80%;
 }
 
 .footer:nth-child(2) {
-    margin: 0.5vh auto;
-    width: 21vh;
-    height: 5vh;
-    font-size: 1.3vh;
+    margin: 0.08rem auto;
+    width: 3.5rem;
+    height: 0.8rem;
+    font-size: 0.2rem;
     color: #9f9d9d;
-    line-height: 2vh;
+    line-height: 0.33rem;
 }
 
 .footer:nth-child(2) ul {
     display: flex;
     flex-wrap: wrap;
-    width: 21vh;
+    width: 3.5rem;
     justify-content: space-between;
     list-style: none;
 }
 
 .footer:nth-child(2) ul li {
-    width: 7vh;
+    width: 1.16rem;
     text-align: center;
 }
 
 .footer:nth-child(3) {
     margin: 0 auto;
-    width: 13vh;
-    height: 0.2vh;
-    border-top: 0.2vh dotted #f5f5f5;
+    width: 2rem;
+    height: 0.03rem;
+    border-top: 0.03rem dotted #f5f5f5;
 }
 
 .footer:nth-child(4) {
-    margin: 1vh auto;
-    width: 35vh;
-    height: 5vh;
-    font-size: 1vh;
+    margin: 0.17rem auto;
+    width: 5.82rem;
+    height: 1rem;
+    font-size: 0.16rem;
     text-align: center;
-    line-height: 2vh;
+    line-height: 0.33rem;
     color: #9f9d9d;
 }
 
 .footer:nth-child(4) ul {
     list-style: none;
-    width: 35vh;
+    width: 5.82rem;
 }
 
 .footer:nth-child(5) {
     margin: 0 auto;
-    width: 15vh;
-    height: 4vh;
+    width: 2.5rem;
+    height: 0.67rem;
     display: flex;
     justify-content: space-around;
 }
 
 .footer .footer-login {
-    width: 4vh;
-    height: 4vh;
-    border-radius: 2vh;
-    border: 0.2vh solid #fff;
+    width: 0.67rem;
+    height: 0.67rem;
+    border-radius: 0.33rem;
+    border: 0.03rem solid #fff;
 }
 
 .footer-login:nth-child(1) {
