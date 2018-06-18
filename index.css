@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @media screen and (min-width: 320px) {
     html {
         font-size: calc(320 / 750 * 100px);
@@ -30,6 +31,7 @@
     }
 
 }
+
 .header {
     width: 100%;
     height: 7.74rem;
@@ -70,7 +72,8 @@
     list-style: none;
     font-size: 0.25rem;
 }
-.drop-menu:before{
+
+.drop-menu:before {
 
     content: "";
     position: absolute;
@@ -81,6 +84,7 @@
     transform: rotate(45deg);
     background: #546972;
 }
+
 .drop-menu ul {
     list-style: none;
 }
@@ -90,11 +94,21 @@
 }
 
 .drop-menu ul li:nth-child(1), .drop-menu ul li:nth-child(3), .drop-menu ul li:nth-child(5) {
-    border-bottom: 0.03rem solid #fff;
+    border-bottom: 0.01rem solid #fff;
+}
+
+.drop-menu ul li:nth-child(1):after {
+    content: "";
+    position: absolute;
+    bottom: 4.5rem;
+    right: 0.05rem;
+    width: 0.4rem;
+    height: 0.03rem;
+    background: #e8b414;
 }
 
 .drop-menu ul li:nth-child(2), .drop-menu ul li:nth-child(4), .drop-menu ul li:nth-child(6) {
-    border-bottom: 0.03rem dashed #fff;
+    border-bottom: 0.01rem dashed #fff;
 }
 
 .menu-logo:hover .drop-menu {
@@ -160,7 +174,8 @@
     border: 0.02rem solid #deae05;
     border-radius: 0.1rem;
 }
-.search-drop:before{
+
+.search-drop:before {
     content: "";
     position: absolute;
     top: -0.1rem;
@@ -172,6 +187,7 @@
     border-top: 0.02rem solid #deae05;
     border-left: 0.02rem solid #deae05;
 }
+
 .search-drop label {
     list-style: none;
     float: left;
@@ -234,12 +250,14 @@
     background: url("header-background.png") no-repeat center;
     background-size: 100%;
 }
-.top-banner{
+
+.top-banner {
     position: absolute;
     width: 100%;
     height: 100%;
 }
-.top-banner:nth-child(1){
+
+.top-banner:nth-child(1) {
     z-index: 110;
     background: url("banner-1 (1).jpg") no-repeat center;
     background-size: 100%;
@@ -252,7 +270,8 @@
         opacity: 0;
     }
 }
-.top-banner:nth-child(2){
+
+.top-banner:nth-child(2) {
     z-index: 110;
     background: url("banner-1 (2).jpg") no-repeat center;
     background-size: 100%;
@@ -265,7 +284,8 @@
         opacity: 0;
     }
 }
-.top-banner:nth-child(3){
+
+.top-banner:nth-child(3) {
     z-index: 110;
     background: url("banner-1 (3).jpg") no-repeat center;
     background-size: 100%;
@@ -278,6 +298,7 @@
         opacity: 0;
     }
 }
+
 .header-product:nth-child(4) {
     position: absolute;
     z-index: 100;
@@ -702,12 +723,83 @@
 
 .content:nth-child(2) .list-shop {
     position: absolute;
-    height: 0.6rem;
-    width: 4.1rem;
-    background: url("list-shop.png") no-repeat center;
-    background-size: 100%;
+    height: 0.8rem;
+    width: 4.4rem;
     bottom: 0.33rem;
-    right: 0.33rem;
+    right: 0.03rem;
+    display: flex;
+}
+
+.shop-logo {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url("shop.jpg") no-repeat center;
+    background-size: 150%;
+    border-radius: 0.25rem;
+    border: 0.02rem solid #dddddd;
+}
+
+.shop-list {
+    width: 1.5rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    font-size: 0.16rem;
+    text-align: center;
+}
+
+.author {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1.2rem;
+    height: 0.3rem;
+    border-radius: 0.15rem;
+    background: #f2c744;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.3rem;
+    color: #fff;
+}
+
+.UI {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 0.15rem;
+    font-size: 0.24rem;
+    line-height: 0.3rem;
+    text-align: center;
+    background: #39c380;
+    color: #fff;
+}
+
+.list-shop ul {
+    width: 2.45rem;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    border-left: 0.01rem dotted #000;
+}
+
+.list-shop ul li:nth-child(1), .list-shop ul li:nth-child(2) {
+    float: left;
+    width: 1.2rem;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.24rem;
+    color: red;
+}
+
+.list-shop ul li:nth-child(3), .list-shop ul li:nth-child(4) {
+    float: left;
+    width: 1.2rem;
+    font-size: 0.12rem;
+    text-align: center;
+    color: #7f7f7f;
+    line-height: 0.24rem;
 }
 
 .content-designer {
@@ -875,13 +967,15 @@
     position: relative;
     overflow: hidden;
 }
-.hot-banner{
+
+.hot-banner {
     position: absolute;
     z-index: 150;
     width: 100%;
     height: 100%;
 }
-.hot-banner:nth-child(1){
+
+.hot-banner:nth-child(1) {
     background: url("banner-1 (1).jpg") no-repeat center;
     background-size: 200%;
     -webkit-animation: child-1-move 5s infinite;
@@ -893,7 +987,8 @@
         opacity: 0;
     }
 }
-.hot-banner:nth-child(2){
+
+.hot-banner:nth-child(2) {
     z-index: 110;
     background: url("banner-1 (2).jpg") no-repeat center;
     background-size: 200%;
@@ -906,7 +1001,8 @@
         opacity: 0;
     }
 }
-.hot-banner:nth-child(3){
+
+.hot-banner:nth-child(3) {
     z-index: 110;
     background: url("banner-1 (3).jpg") no-repeat center;
     background-size: 200%;
@@ -919,6 +1015,7 @@
         opacity: 0;
     }
 }
+
 .banner-inf {
     position: absolute;
     z-index: 1000;
@@ -1080,60 +1177,70 @@
     font-size: 0.16rem;
     text-align: center;
 }
-.partner-1{
+
+.partner-1 {
     width: 100%;
     height: 60%;
     background: url("partner-1.png") no-repeat center;
     background-size: 60%;
 }
-.partner-2{
+
+.partner-2 {
     width: 100%;
     height: 60%;
     background: url("partner-2.png") no-repeat center;
     background-size: 60%;
 }
-.partner-3{
+
+.partner-3 {
     width: 100%;
     height: 60%;
     background: url("partner-3.png") no-repeat center;
     background-size: 60%;
 }
-.partner-4{
+
+.partner-4 {
     width: 100%;
     height: 60%;
     background: url("partner-4.png") no-repeat center;
     background-size: 60%;
 }
-.partner-5{
+
+.partner-5 {
     width: 100%;
     height: 60%;
     background: url("partner-5.png") no-repeat center;
     background-size: 60%;
 }
-.partner-6{
+
+.partner-6 {
     width: 100%;
     height: 60%;
     background: url("partner-6.png") no-repeat center;
     background-size: 60%;
 }
-.partner-7{
+
+.partner-7 {
     width: 100%;
     height: 60%;
     background: url("partner-7.png") no-repeat center;
     background-size: 60%;
 }
-.partner-8{
+
+.partner-8 {
     width: 100%;
     height: 60%;
     background: url("partner-8.png") no-repeat center;
     background-size: 60%;
 }
-.partner-9{
+
+.partner-9 {
     width: 100%;
     height: 60%;
     background: url("partner-9.png") no-repeat center;
     background-size: 60%;
 }
+
 .partner-button {
     margin: 0.24rem auto;
     width: 3.66rem;
